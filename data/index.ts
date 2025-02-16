@@ -1,14 +1,21 @@
+import { link } from "fs";
+
 export const navItems = [
+  {
+    name: "See My CV",
+    link: "https://docs.google.com/document/d/1Q5UZQVyljSUHTumtP8jF3Pjtb2TVI-vASrl6D9fxxwY/edit?usp=drive_link",
+  },
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Projects", link: "#recent-projects" },
+  { name: "Reviews", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "Full-Stack Developer Specializing in Collaborative, Real-Time Solutions ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -28,7 +35,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "My Tech Stack",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,8 +45,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "Third-Year Student at Panjab University",
+    description: "CSE",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -49,7 +56,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Building the Future of Interactive Web Experiences",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,68 +79,73 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "MoveX",
+    des: "Embark on a journey with MoveX, a dynamic ride-sharing experience powered by real-time communication, geolocation services, and secure authentication using the MERN stack.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
+    link: "https://github.com/iamgaurav12/MoveX",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Comm-Sync-AI",
+    des: "Real-time AI chat app with seamless communication, performance optimization, and secure authentication.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    iconLists: ["/ts.svg", "/tail.svg", "/three.svg", "/re.svg"],
+    link: "https://github.com/iamgaurav12/Comm-Sync-AI",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "ATS-Analyser",
+    des: "Streamlined ATS analyzing job descriptions, identifying keyword gaps, and automating profile summaries efficiently.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: ["/c.svg"],
+    link: "https://github.com/iamgaurav12/ATS-Analyser",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "SentinelBot",
+    des: "Sentinel Bot: AI-powered security solution for monitoring, threat detection, and automated response.",
+    img: "/x.svg",
+    iconLists: ["c.svg"],
+    link: "https://github.com/iamgaurav12/SentinelBot",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Gaurav’s website mirrors his personality—clear, dynamic, and ever-evolving. Every visit feels like a fresh adventure, packed with surprises and innovation. You never know what exciting feature he’ll add next! It’s a testament to his creativity, passion, and dedication, making it an experience worth revisiting every time.",
+    name: "Vaibhav Kumar",
+    title: "Student Of Panjab University",
+    img: "/vaibhav.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Gaurav’s website is a dynamic blend of innovation and simplicity. With every visit, there’s something new to discover—whether it’s a fresh feature or a creative touch. It’s a space that showcases his dedication to continuous improvement and reflects his passion for delivering a unique and engaging user experience.",
+    name: "Prashant Kumar",
+    title: "Student of UIET",
+    img: "/prashant.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working together is always an adventure—full of laughs, creative ideas, and unexpected brilliance. There’s never a dull moment, and collaboration feels like a fun, energetic brainstorm session. The positive vibe and open-minded attitude make every project a blast, leaving everyone inspired and ready for the next challenge!",
+    name: "Amanpreet Kaur",
+    title: "ML Engineer",
+    img: "/aman.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaboration feels effortless—there’s a natural ability to listen, adapt, and bring fresh ideas to the table. Challenges turn into opportunities, and every conversation is filled with thoughtful insights. It’s a blend of professionalism and approachability that makes working together feel motivating and truly rewarding.",
+    name: "Saurav Dhiani",
+    title: "Intern At DIC",
+    img: "/saurav.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Your collaborative style mirrors your LinkedIn and GitHub—creative, organized, and professional. You’re positive, patient, and encouraging, transforming challenges into opportunities while fostering a supportive, insightful, and inspiring environment for everyone.",
+    name: "Navneet Singh",
+    title: "Intern Of Data Analyst",
+    img: "/navneet.jpg",
   },
 ];
 
@@ -146,24 +158,6 @@ export const companies = [
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
@@ -173,29 +167,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Engineer Intern At NIELET(Haridwar)",
+    desc: "Served as a Frontend Intern at NIELIT, focusing on developing user-friendly web interfaces, optimizing UI performance, implementing responsive designs, and collaborating with the team to enhance user experience using modern frameworks.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Backend Developer At Lawyal Tech",
+    desc: "Worked as a backend developer at Lawyal Tech, building and maintaining scalable APIs, database management, and ensuring secure, efficient server-side operations using Node.js, Express, and MongoDB.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "4th Position At IDEATHON",
+    desc: "A collaborative innovation event where participants brainstorm and pitch creative solutions to real-world challenges. Encourages teamwork, rapid problem-solving, and idea validation to develop actionable, impactful project concepts.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Hiring Lead at Coding Blocks College Chapter",
+    desc: "Served as Hiring Lead at Coding Blocks College Chapter, overseeing recruitment efforts to hire 15-20 students for diverse roles. Conducted resume screenings, interviews, and onboarding processes while collaborating with the team to identify top talent and meet staffing goals efficiently.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -204,14 +198,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/gaurav-prakash-b263a9109/",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://leetcode.com/u/GauravPrakashh/",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/git.svg",
+    link: "https://github.com/iamgaurav12",
   },
 ];
